@@ -4533,7 +4533,7 @@ textarea {
   height: 100%;
   background: rgba(0, 0, 0, 0.5); }
 
-.bg-gradient-primary {
+  .bg-gradient-primary {
   background-image: -webkit-gradient(linear, left top, right top, from(#D1335B), to(#ff635d));
   background-image: linear-gradient(to right, #D1335B, #ff635d); }
 

@@ -46,8 +46,8 @@ a {
 
 .page-cover:after {
   content: "";
-  background: -webkit-gradient(linear, right top, left top, from(#D1335B), to(#00152e));
-  background: linear-gradient(to left, #D1335B, #00152e);
+
+  background: linear-gradient(to right, #01579B, #29B6F6);
   position: absolute;
   left: 0;
   right: 0;
