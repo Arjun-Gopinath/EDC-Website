@@ -86,6 +86,7 @@
 		<!--End of section 1-->
 
 		<!--Section 2 Cofounder(s) Details-->
+
 		<div class="well" >Co Founder(s)
 		
 		</div>
@@ -134,15 +135,16 @@
 				<label for name=NSSIAN>No<input type=radio name=NSSIAN class="form-control-inline"></label></div>
 				</div>
 			</div>
+
 			
 			
 
 		</div>
-	
+		<div class="input_fields_wrap">
 		<div class="btns-action anim-3" align=right>
-				<div class="input_fields_wrap" align=right>        
+				        
 		<button class="add_field_button btn btn-outline-white btn-round">Add More Fields</button>
-			</div>	<hr>
+			</div>
 			</div>
 		<!--End of section 2-->
         <!--Section 3 Business details-->
@@ -167,12 +169,91 @@
 			<div class="form-group col-md-12" ><label for="desc">Please provide a brief description of your business idea<font color=red>*</font></label>
     			<textarea name="desc" class=form-control required placeholder="Describe your Idea" /></textarea>
 			</div>
-			<div class="form-group col-md-6" ><label for="website">Website<font color=red>*</font></label>
-    			<input type="text" name="website" class=form-control required placeholder="Website Address" />
+		</div>
+		<hr>
+		<div class="row">
+			<div class="form-group col-md-12" ><label for="whopay">Key customer Segments.Who are the People or the Companies who will pay for the Product/Service?<font color=red>*</font></label>
+    			<textarea name="who pay" class=form-control required placeholder="Describe your customer base" /></textarea>
 			</div>
-			<div class="form-group col-md-6"><label for="employees">Do you have Employees? If yes, how many?<font color=red>*</font></label>
-    			<input type="text" name="employee" class=form-control required placeholder="Employee Details" />
+		</div>
+		<hr>
+		<div class="row">
+			<div class="form-group col-md-12" ><label for="custpain">Define the Customer's pain, problem or unmet need.<font color=red>*</font></label>
+    			<textarea name="custpain" class=form-control required /></textarea>
 			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="form-group col-md-12" ><label for="Competitors">Key Competitors/How your customer solve this problem today?<font color=red>*</font></label>
+    			<textarea name="Competitors" class=form-control required placeholder="Your product/Service Competitors" /></textarea>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="form-group col-md-12" ><label for="UVP">Unique Value Proposition(How will your solution be better than the Competition?<font color=red>*</font></label>
+    			<textarea name="UVP" class=form-control required placeholder="Unique/Advanced feature of yor product" /></textarea>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="form-group col-md-12" ><label for="solution">Solution (How will you solve the problem for the customer?<font color=red>*</font></label>
+    			<textarea name="solution" class=form-control required placeholder="Describe your Idea" /></textarea>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="form-group col-md-12" ><label for="copyright">Is there any intellectual property(trade secrets, copyrights,patents etc.) potentially associated with your idea?<font color=red>*</font></label>
+    			<textarea name="copyright" class=form-control required placeholder="Discuss potential patents" /></textarea>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="form-group col-md-12" ><label for="customers">What are the potential number of customers taht could be interested in purchasing your product/service, and/or information you found on market size and growth for tis field<font color=red>*</font></label>
+    			<textarea name="customers" class=form-control required placeholder="Potential number of customers" /></textarea>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="form-group col-md-12" ><label for="marketing">How will you sell your product/service?(Distribution, Sales channels, etc.)<font color=red>*</font></label>
+    			<textarea name="marketing" class=form-control required placeholder="Your Marketing idea" /></textarea>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="form-group col-md-12" ><label for="makemoney">Revenue streams (How will you make money?)<font color=red>*</font></label>
+    			<textarea name="makemoney" class=form-control required placeholder="How will you make money" /></textarea>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="form-group col-md-12" ><label for="investment">Please Estimate your Business startup costs<font color=red>*</font></label>
+    			<textarea name="investment" class=form-control required placeholder="Initial investment costs for your startup" /></textarea>
+			</div>
+		</div>
+		<hr>
+		<div class="row">
+			<div class="form-group col-md-12" ><label for="Goals">How will you reach your financial goals for startup? (family, friends, loan, investors, etc.<font color=red>*</font></label>
+    			<textarea name="Goals" class=form-control required placeholder="Describe your Idea" /></textarea>
+			</div>
+		</div>
+		<hr>
+		<!--End of Section 4-->
+		<!--Section 5 Upload documents-->
+		<div class="well" >Upload Documents</div>
+			<div class="form-control col-md-5">
+				Upload word documents regarding the startup
+				<input type=file name='docfile'/>
+			</div>
+			<br>
+			<div class="form-control col-md-5">
+				Upload your photo<br>
+				<input type=file name='docfile'/>
+			</div>
+			<hr>
+			<br>
+
+		<div class="form-group col-md-12" align=center>
+		<input type="submit" class="btn btn-outline-white btn-round btns-action anim-3" >
 		</div>
 		  
 		</form>
@@ -190,16 +271,20 @@
 
 <script type="text/javascript">
 $(document).ready(function() {
-    var max_fields      = 10; //maximum input boxes allowed
+    var max_fields      = 5; //maximum input boxes allowed
     var wrapper         = $(".input_fields_wrap"); //Fields wrapper
     var add_button      = $(".add_field_button"); //Add button ID
-    var fieldHTML       ='<div class="row"><div class="form-group col-md-3"><label for="cf1name">Name of other cofounder :<font color=red>*</font></label><input type="text" name="cf1name" class=form-control required placeholder="First name" /></div><div class="form-group col-md-3"><label for="cf1lname">..</label><input type="text" name="cf1lname" class="form-control" required placeholder="Last name" /></div>                                   <div class="form-group col-md-3"><label for="cf1sem">Semester<font color=red>*</font></label><select name="cf1sem" class="form-control" required><option value=sem1>Semester 1</option><option value=sem2>Semester 2</option><option value=sem3>Semester 3</option><option value=sem4>Semester 4</option><option value=sem5>Semester 5</option><option value=sem6>Semester 6</option><option value=sem7>Semester 7</option><option value=sem8>Semester 8</option></select></div><div class="form-group col-md-3"><label for="cf1branch">Branch<font color=red>*</font></label><select name="cf1branch" class="form-control" required><option value=Civil>Civil engineering</option><option value=Computer>Computer Science</option><option value=Electrical>Electrical & Electronics Engineering</option><option value=Electronics>Electronics Engneering</option><option value=Instrumentation>Instrumentation & Control Engineering</option><option value=Mechanical>Mechanical Engineering</option></select></div><div class="form-group col-md-3"><label For="Email">Email:<font color=red>*</font></label><input type="Email" name="Email" class=form-control required placeholder="yourid@host.domain" /></div>	<div class="form-group col-md-3"><label for="mobile">Mobile:<font color=red>*</font></label>    			<input type="number" name="mobile" class=form-control required placeholder="Mobile number" />			</div>			<div class="form-group col-md-3">Is Your CoFounder a NSSCE student				<div class=row>				<div class="col-md-6">				<label for name=NSSIAN>Yes<input type=radio name=NSSIAN class="form-control-inline"></label></div>				<div class="col-md-6">				<label for name=NSSIAN>No<input type=radio name=NSSIAN class="form-control-inline"></label></div>				</div>			</div><a href="#" class="remove_field">Remove</a></div>'; //add input box
-    var x = 1; //initlal text box count
+	var x = 1; 
+    //initlal text box count
     $(add_button).click(function(e){ //on add input button click
         e.preventDefault();
         if(x < max_fields){ //max input box allowed
             x++; //text box increment
-            $(wrapper).append(fieldHTML);
+            
+    var fieldHTML       ='<hr><div class="row"><div class="form-group col-md-3"><label for="cf'+x+'name">Name of  cofounder'+x+' :<font color=red>*</font></label><input type="text" name="cf'+x+'name" class=form-control required placeholder="First name" /></div><div class="form-group col-md-3"><label for="cf'+x+'lname">..</label><input type="text" name="cf'+x+'lname" class="form-control" required placeholder="Last name" /></div>                                   <div class="form-group col-md-3"><label for="cf'+x+'sem">Semester<font color=red>*</font></label><select name="cf'+x+'sem" class="form-control" required><option value=sem1>Semester 1</option><option value=sem2>Semester 2</option><option value=sem3>Semester 3</option><option value=sem4>Semester 4</option><option value=sem5>Semester 5</option><option value=sem6>Semester 6</option><option value=sem7>Semester 7</option><option value=sem8>Semester 8</option></select></div><div class="form-group col-md-3"><label for="cf'+x+'branch">Branch<font color=red>*</font></label><select name="cf'+x+'branch" class="form-control" required><option value=Civil>Civil engineering</option><option value=Computer>Computer Science</option><option value=Electrical>Electrical & Electronics Engineering</option><option value=Electronics>Electronics Engneering</option><option value=Instrumentation>Instrumentation & Control Engineering</option><option value=Mechanical>Mechanical Engineering</option></select></div><div class="form-group col-md-3"><label For="Email'+x+'">Email:<font color=red>*</font></label><input type="Email" name="Email'+x+'" class=form-control required placeholder="yourid@host.domain" /></div>	<div class="form-group col-md-3"><label for="mobile'+x+'">Mobile:<font color=red>*</font></label>    			<input type="number" name="mobile'+x+'" class=form-control required placeholder="Mobile number" />			</div>			<div class="form-group col-md-3">Is Your CoFounder a NSSCE student				<div class=row>				<div class="col-md-6">				<label for name=NSSIAN>Yes<input type=radio name=NSSIAN class="form-control-inline"></label></div>				<div class="col-md-6">				<label for name=NSSIAN>No<input type=radio name=NSSIAN class="form-control-inline"></label></div>				</div>			</div></div><a href="#" class="remove_field">Remove</a>		'; //add input box
+    	$(wrapper).append(fieldHTML);
+
+           
         }
     });
     
