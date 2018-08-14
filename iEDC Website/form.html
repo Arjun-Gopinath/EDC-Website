@@ -40,7 +40,9 @@
 	<div class=formbg>
 
             	<!-- title -->
-       <h1 align=center style="padding: 13px">Application for Student Incubation in INNOVATION AND ENTREPRENEURSHIP DEVELOPMENT CELL NSS College of Engineering, Palakkad</h1>
+       <div><h1 align=center style="padding-left: 13px;padding-right: 13px;padding-top: 10px">Application for Student Incubation in </h1></div>
+       	<div><h1 align=center style="padding-left: 13px;padding-right: 13px;">INNOVATION AND ENTREPRENEURSHIP DEVELOPMENT CELL </h1>
+       	</div><div><h1 align=center style="padding-left: 13px;padding-right: 13px;">NSS College of Engineering, Palakkad</h1></div>
 	
 	
        	<form action="collect.php" method=post>
@@ -190,13 +192,13 @@
 		</div>
 		<hr>
 		<div class="row">
-			<div class="form-group col-md-12" ><label for="UVP">Unique Value Proposition(How will your solution be better than the Competition?<font color=red>*</font></label>
+			<div class="form-group col-md-12" ><label for="UVP">Unique Value Proposition(How will your solution be better than the Competition?)<font color=red>*</font></label>
     			<textarea name="UVP" class=form-control required placeholder="Unique/Advanced feature of yor product" /></textarea>
 			</div>
 		</div>
 		<hr>
 		<div class="row">
-			<div class="form-group col-md-12" ><label for="solution">Solution (How will you solve the problem for the customer?<font color=red>*</font></label>
+			<div class="form-group col-md-12" ><label for="solution">Solution (How will you solve the problem for the customer?)<font color=red>*</font></label>
     			<textarea name="solution" class=form-control required placeholder="Describe your Idea" /></textarea>
 			</div>
 		</div>
@@ -208,7 +210,7 @@
 		</div>
 		<hr>
 		<div class="row">
-			<div class="form-group col-md-12" ><label for="customers">What are the potential number of customers taht could be interested in purchasing your product/service, and/or information you found on market size and growth for tis field<font color=red>*</font></label>
+			<div class="form-group col-md-12" ><label for="customers">What are the potential number of customers that could be interested in purchasing your product/service, and/or information you found on market size and growth for this field<font color=red>*</font></label>
     			<textarea name="customers" class=form-control required placeholder="Potential number of customers" /></textarea>
 			</div>
 		</div>
@@ -232,7 +234,7 @@
 		</div>
 		<hr>
 		<div class="row">
-			<div class="form-group col-md-12" ><label for="Goals">How will you reach your financial goals for startup? (family, friends, loan, investors, etc.<font color=red>*</font></label>
+			<div class="form-group col-md-12" ><label for="Goals">How will you reach your financial goals for startup? (family, friends, loan, investors, etc.)<font color=red>*</font></label>
     			<textarea name="Goals" class=form-control required placeholder="Describe your Idea" /></textarea>
 			</div>
 		</div>
@@ -240,26 +242,26 @@
 		<!--End of Section 4-->
 		<!--Section 5 Upload documents-->
 		<div class="well" >Upload Documents</div>
-			<div class="form-control col-md-5">
+			<div class="form-control col-md-12">
 				Upload word documents regarding the startup
 				<input type=file name='docfile'/>
 			</div>
 			<br>
-			<div class="form-control col-md-5">
-				Upload your photo<br>
+			<div class="form-control col-md-12">
+				Upload your photo
 				<input type=file name='docfile'/>
 			</div>
 			<hr>
 			<br>
 
-		<div class="form-group col-md-12" align=center>
+		<div class="form-group col-md-12"  align=center>
 		<input type="submit" class="btn btn-outline-white btn-round btns-action anim-3" >
 		</div>
 		  
 		</form>
 		
                
-        
+	<br><br>        
 	</div>
 
 </div>
@@ -281,7 +283,7 @@ $(document).ready(function() {
         if(x < max_fields){ //max input box allowed
             x++; //text box increment
             
-    var fieldHTML       ='<hr><div class="row"><div class="form-group col-md-3"><label for="cf'+x+'name">Name of  cofounder'+x+' :<font color=red>*</font></label><input type="text" name="cf'+x+'name" class=form-control required placeholder="First name" /></div><div class="form-group col-md-3"><label for="cf'+x+'lname">..</label><input type="text" name="cf'+x+'lname" class="form-control" required placeholder="Last name" /></div>                                   <div class="form-group col-md-3"><label for="cf'+x+'sem">Semester<font color=red>*</font></label><select name="cf'+x+'sem" class="form-control" required><option value=sem1>Semester 1</option><option value=sem2>Semester 2</option><option value=sem3>Semester 3</option><option value=sem4>Semester 4</option><option value=sem5>Semester 5</option><option value=sem6>Semester 6</option><option value=sem7>Semester 7</option><option value=sem8>Semester 8</option></select></div><div class="form-group col-md-3"><label for="cf'+x+'branch">Branch<font color=red>*</font></label><select name="cf'+x+'branch" class="form-control" required><option value=Civil>Civil engineering</option><option value=Computer>Computer Science</option><option value=Electrical>Electrical & Electronics Engineering</option><option value=Electronics>Electronics Engneering</option><option value=Instrumentation>Instrumentation & Control Engineering</option><option value=Mechanical>Mechanical Engineering</option></select></div><div class="form-group col-md-3"><label For="Email'+x+'">Email:<font color=red>*</font></label><input type="Email" name="Email'+x+'" class=form-control required placeholder="yourid@host.domain" /></div>	<div class="form-group col-md-3"><label for="mobile'+x+'">Mobile:<font color=red>*</font></label>    			<input type="number" name="mobile'+x+'" class=form-control required placeholder="Mobile number" />			</div>			<div class="form-group col-md-3">Is Your CoFounder a NSSCE student				<div class=row>				<div class="col-md-6">				<label for name=NSSIAN>Yes<input type=radio name=NSSIAN class="form-control-inline"></label></div>				<div class="col-md-6">				<label for name=NSSIAN>No<input type=radio name=NSSIAN class="form-control-inline"></label></div>				</div>			</div></div><a href="#" class="remove_field">Remove</a>		'; //add input box
+    var fieldHTML       ='<div class="row"><div class="form-group col-md-3"><label for="cf'+x+'name">Name of  cofounder '+x+' :<font color=red>*</font></label><input type="text" name="cf'+x+'name" class=form-control required placeholder="First name" /></div><div class="form-group col-md-3"><label for="cf'+x+'lname">..</label><input type="text" name="cf'+x+'lname" class="form-control" required placeholder="Last name" /></div>                                   <div class="form-group col-md-3"><label for="cf'+x+'sem">Semester<font color=red>*</font></label><select name="cf'+x+'sem" class="form-control" required><option value=sem1>Semester 1</option><option value=sem2>Semester 2</option><option value=sem3>Semester 3</option><option value=sem4>Semester 4</option><option value=sem5>Semester 5</option><option value=sem6>Semester 6</option><option value=sem7>Semester 7</option><option value=sem8>Semester 8</option></select></div><div class="form-group col-md-3"><label for="cf'+x+'branch">Branch<font color=red>*</font></label><select name="cf'+x+'branch" class="form-control" required><option value=Civil>Civil engineering</option><option value=Computer>Computer Science</option><option value=Electrical>Electrical & Electronics Engineering</option><option value=Electronics>Electronics Engneering</option><option value=Instrumentation>Instrumentation & Control Engineering</option><option value=Mechanical>Mechanical Engineering</option></select></div><div class="form-group col-md-3"><label For="Email'+x+'">Email:<font color=red>*</font></label><input type="Email" name="Email'+x+'" class=form-control required placeholder="yourid@host.domain" /></div>	<div class="form-group col-md-3"><label for="mobile'+x+'">Mobile:<font color=red>*</font></label>    			<input type="number" name="mobile'+x+'" class=form-control required placeholder="Mobile number" />			</div>			<div class="form-group col-md-3">Is Your CoFounder a NSSCE student				<div class=row>				<div class="col-md-6">				<label for name=NSSIAN>Yes<input type=radio name=NSSIAN class="form-control-inline"></label></div>				<div class="col-md-6">				<label for name=NSSIAN>No<input type=radio name=NSSIAN class="form-control-inline"></label></div>				</div>			</div><a href="#" class="remove_field col-sm-1 fa fa-close" style="float:right" >Remove</a></div>'; //add input box
     	$(wrapper).append(fieldHTML);
 
            
@@ -289,7 +291,7 @@ $(document).ready(function() {
     });
     
     $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
-        e.preventDefault(); $(this).parent('div').remove(); x--;
-    })
+       e.preventDefault(); $(this).parent('div').remove(); x--;
+            } )
 });
 </script>
