@@ -15,7 +15,7 @@ echo $_POST["cf1sem"];
 echo $_POST["cf1branch"];
 echo $_POST["Email1"];
 echo $_POST["mobile1"];
-echo $_POST["NSSIAN"];
+echo $_POST["NSSIAN1"];
 
 
 echo $_POST["cf2name"];
@@ -24,7 +24,7 @@ echo $_POST["cf2sem"];
 echo $_POST["cf2branch"];
 echo $_POST["Email2"];
 echo $_POST["mobile2"];
-echo $_POST["NSSIAN"];
+echo $_POST["NSSIAN2"];
 
 
 echo $_POST["cf3name"];
@@ -33,7 +33,7 @@ echo $_POST["cf3sem"];
 echo $_POST["cf3branch"];
 echo $_POST["Email3"];
 echo $_POST["mobile3"];
-echo $_POST["NSSIAN"];
+echo $_POST["NSSIAN3"];
 
 
 echo $_POST["cf4name"];
@@ -42,7 +42,7 @@ echo $_POST["cf4sem"];
 echo $_POST["cf4branch"];
 echo $_POST["Email4"];
 echo $_POST["mobile4"];
-echo $_POST["NSSIAN"];
+echo $_POST["NSSIAN4"];
 
 
 echo $_POST["cf5name"];
@@ -51,7 +51,7 @@ echo $_POST["cf5sem"];
 echo $_POST["cf5branch"];
 echo $_POST["Email5"];
 echo $_POST["mobile5"];
-echo $_POST["NSSIAN"];
+echo $_POST["NSSIAN5"];
 
 
 echo $_POST["company"];
