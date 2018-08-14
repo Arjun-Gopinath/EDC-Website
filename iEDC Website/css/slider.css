@@ -329,9 +329,9 @@
     @media (min-width: 960px) and (orientation: landscape) {
       .slide-wrapper .legend_1 {
         position: absolute;
-        left: 65%;
+        left: 62%;
         top: 48px;
-        width: 300px;
+        width: 250px;
         margin-left: 2rem;
         padding: 0; } }
     @media (min-width: 1200px) and (orientation: landscape) {
