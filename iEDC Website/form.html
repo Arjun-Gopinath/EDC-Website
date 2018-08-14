@@ -32,6 +32,8 @@
   <link rel="stylesheet" href="css/style-default.css">
 
   <script src="js/vendor/modernizr-2.7.1.min.js"></script>
+  <!--jquery file for multiple fields of cofounder inputs-->
+  <script src="js/jquery.min.js" type="text/javascript"></script>
 
 	</head>
 <body id="menu" class="body-page">
@@ -84,7 +86,9 @@
 		<!--End of section 1-->
 
 		<!--Section 2 Cofounder(s) Details-->
-		<div class="well" >Co Founder(s)</div>
+		<div class="well" >Co Founder(s)
+		
+		</div>
                 
   		<div class="row">
 			<div class="form-group col-md-3"><label for="cf1name">Name of cofounder 1:<font color=red>*</font></label>
@@ -121,15 +125,86 @@
 			</div>
 			<div class="form-group col-md-3"><label for="mobile">Mobile:<font color=red>*</font></label>
     			<input type="number" name="mobile" class=form-control required placeholder="Mobile number" />
-			</div><font color=red>*</font>
-			<div class="form-group col-md-3"><label>Is Your CoFounder a NSSCE student
-				<input type=radio name=NSSIAN
+			</div>
+			<div class="form-group col-md-3">Is Your CoFounder a NSSCE student
+				<div class=row>
+				<div class="col-md-6">
+				<label for name=NSSIAN>Yes<input type=radio name=NSSIAN class="form-control-inline"></label></div>
+				<div class="col-md-6">
+				<label for name=NSSIAN>No<input type=radio name=NSSIAN class="form-control-inline"></label></div>
+				</div>
+			</div>
+			
+			
+
 		</div>
-
-  	
-<font color=red>*</font>        </form><br><br><br>
-               
+	
+		<div class="btns-action anim-3" align=right>
+				<div class="input_fields_wrap" align=right>        
+		<button class="add_field_button btn btn-outline-white btn-round">Add More Fields</button>
+			</div>	<hr>
+			</div>
+		<!--End of section 2-->
+        <!--Section 3 Business details-->
+        <div class="well" >Business</div>
                 
-
+  		<div class="row">
+			<div class="form-group col-md-6" ><label for="company">Company Name:<font color=red>*</font></label>
+    			<input type="text" name="company" class=form-control required placeholder="Company Name" />
+			</div>
+			<div class="form-group col-md-6" ><label for="website">Website<font color=red>*</font></label>
+    			<input type="text" name="website" class=form-control required placeholder="Website Address" />
+			</div>
+			<div class="form-group col-md-6"><label for="employees">Do you have Employees? If yes, how many?<font color=red>*</font></label>
+    			<input type="text" name="employee" class=form-control required placeholder="Employee Details" />
+			</div>
+		</div>
+		<!--End of section 3-->
+        <!--Section 4 Business details-->
+         <div class="well" >Business Description</div>
+                
+  		<div class="row">
+			<div class="form-group col-md-12" ><label for="desc">Please provide a brief description of your business idea<font color=red>*</font></label>
+    			<textarea name="desc" class=form-control required placeholder="Describe your Idea" /></textarea>
+			</div>
+			<div class="form-group col-md-6" ><label for="website">Website<font color=red>*</font></label>
+    			<input type="text" name="website" class=form-control required placeholder="Website Address" />
+			</div>
+			<div class="form-group col-md-6"><label for="employees">Do you have Employees? If yes, how many?<font color=red>*</font></label>
+    			<input type="text" name="employee" class=form-control required placeholder="Employee Details" />
+			</div>
+		</div>
+		  
+		</form>
+		
+               
+        
 	</div>
+
+</div>
+
 </body>
+</html>
+
+
+
+<script type="text/javascript">
+$(document).ready(function() {
+    var max_fields      = 10; //maximum input boxes allowed
+    var wrapper         = $(".input_fields_wrap"); //Fields wrapper
+    var add_button      = $(".add_field_button"); //Add button ID
+    var fieldHTML       ='<div class="row"><div class="form-group col-md-3"><label for="cf1name">Name of other cofounder :<font color=red>*</font></label><input type="text" name="cf1name" class=form-control required placeholder="First name" /></div><div class="form-group col-md-3"><label for="cf1lname">..</label><input type="text" name="cf1lname" class="form-control" required placeholder="Last name" /></div>                                   <div class="form-group col-md-3"><label for="cf1sem">Semester<font color=red>*</font></label><select name="cf1sem" class="form-control" required><option value=sem1>Semester 1</option><option value=sem2>Semester 2</option><option value=sem3>Semester 3</option><option value=sem4>Semester 4</option><option value=sem5>Semester 5</option><option value=sem6>Semester 6</option><option value=sem7>Semester 7</option><option value=sem8>Semester 8</option></select></div><div class="form-group col-md-3"><label for="cf1branch">Branch<font color=red>*</font></label><select name="cf1branch" class="form-control" required><option value=Civil>Civil engineering</option><option value=Computer>Computer Science</option><option value=Electrical>Electrical & Electronics Engineering</option><option value=Electronics>Electronics Engneering</option><option value=Instrumentation>Instrumentation & Control Engineering</option><option value=Mechanical>Mechanical Engineering</option></select></div><div class="form-group col-md-3"><label For="Email">Email:<font color=red>*</font></label><input type="Email" name="Email" class=form-control required placeholder="yourid@host.domain" /></div>	<div class="form-group col-md-3"><label for="mobile">Mobile:<font color=red>*</font></label>    			<input type="number" name="mobile" class=form-control required placeholder="Mobile number" />			</div>			<div class="form-group col-md-3">Is Your CoFounder a NSSCE student				<div class=row>				<div class="col-md-6">				<label for name=NSSIAN>Yes<input type=radio name=NSSIAN class="form-control-inline"></label></div>				<div class="col-md-6">				<label for name=NSSIAN>No<input type=radio name=NSSIAN class="form-control-inline"></label></div>				</div>			</div><a href="#" class="remove_field">Remove</a></div>'; //add input box
+    var x = 1; //initlal text box count
+    $(add_button).click(function(e){ //on add input button click
+        e.preventDefault();
+        if(x < max_fields){ //max input box allowed
+            x++; //text box increment
+            $(wrapper).append(fieldHTML);
+        }
+    });
+    
+    $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
+        e.preventDefault(); $(this).parent('div').remove(); x--;
+    })
+});
+</script>
