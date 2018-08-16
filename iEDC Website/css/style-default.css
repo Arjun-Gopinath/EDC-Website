@@ -47,7 +47,7 @@ a {
 .page-cover:after {
   content: "";
 
-  background: linear-gradient(to right, #01579B, #29B6F6);
+  background: linear-gradient(to right, #13547a,#80d0c7);
   position: absolute;
   left: 0;
   right: 0;
@@ -73,9 +73,11 @@ a {
 
 
 .formbg{
-   background: linear-gradient(to right, #01579B, #29B6F6);
+   background: linear-gradient(to right,#13547a,#80d0c7 );
    padding-left: 19px;
    padding-right: 19px;
+   /*   #13547a,#80d0c7:green aurora;
+        #01579B, #29B6F6:deepblue to blue;    */
 }
 
 /*to remove spinners from input type=number tag*/
