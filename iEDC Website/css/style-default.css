@@ -99,7 +99,7 @@ input[type=number]::-webkit-outer-spin-button {
 .form-box {
   padding-bottom: 0px;
   padding-top: 0px;
-  border-radius: 4px; /*or 2px*/
+  border-radius: 7px; /*or 2px*/
   border: 2px solid white;
   margin-top: 27px;
   margin-left: 12px;
