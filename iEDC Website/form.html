@@ -99,10 +99,10 @@
 			</div>
 			<div class="form-group col-md-3"><label for=branch>Branch<font color=red>*</font></label>
 				<select name="branch" class="form-control" require>
-				<option value=Civil>Civil engineering</option>
-    			<option value=Computer>Computer Science</option>
+				<option value=Civil>Civil Engineering</option>
+    			<option value=Computer>Computer Science Engineering</option>
     			<option value=Electrical>Electrical & Electronics Engineering</option>
-    			<option value=Electronics>Electronics Engneering</option>
+    			<option value=Electronics>Electronics and Communication Engineering</option>
        			<option value=Instrumentation>Instrumentation & Control Engineering</option>
     			<option value=Mechanical>Mechanical Engineering</option>
 				</select>
@@ -141,16 +141,16 @@
     			<option value=sem8>Semester 8</option>
 				</select>
 			</div>
-			<div class="form-group col-md-3"><label>Branch<font color=red>*</font>
+			<div class="form-group col-md-3"><label for="cf1branch">Branch<font color=red>*</font></label>
 				<select name="cf1branch" class="form-control" require>
-				<option value=Civil>Civil engineering</option>
-    			<option value=Computer>Computer Science</option>
+				<option value=Civil>Civil Engineering</option>
+    			<option value=Computer>Computer Science Engineering</option>
     			<option value=Electrical>Electrical & Electronics Engineering</option>
-    			<option value=Electronics>Electronics Engneering</option>
+    			<option value=Electronics>Electronics and Communication Engineering</option>
        			<option value=Instrumentation>Instrumentation & Control Engineering</option>
     			<option value=Mechanical>Mechanical Engineering</option>
 				</select>
-				</label>
+				
 			</div>
 			<div class="form-group col-md-3"><label for="Email1">Email:<font color=red>*</font></label>
     			<input type="Email" name="Email1" class=form-control require placeholder="yourid@host.domain" />
@@ -312,7 +312,7 @@ $(document).ready(function() {
         if(x < max_fields){ //max input box allowed
             x++; //text box increment
             
-    var fieldHTML       ='<div class="row"><div class="form-group col-md-3"><label for="cf'+x+'name">Name of  Co Founder '+x+' :<font color=red>*</font></label><input type="text" name="cf'+x+'name" class=form-control require placeholder="First name" /></div><div class="form-group col-md-3"><label for="cf'+x+'lname">..</label><input type="text" name="cf'+x+'lname" class="form-control" require placeholder="Last name" /></div>                                   <div class="form-group col-md-3"><label for="cf'+x+'sem">Semester<font color=red>*</font></label><select name="cf'+x+'sem" class="form-control" require><option value=sem1>Semester 1</option><option value=sem2>Semester 2</option><option value=sem3>Semester 3</option><option value=sem4>Semester 4</option><option value=sem5>Semester 5</option><option value=sem6>Semester 6</option><option value=sem7>Semester 7</option><option value=sem8>Semester 8</option></select></div><div class="form-group col-md-3"><label for="cf'+x+'branch">Branch<font color=red>*</font></label><select name="cf'+x+'branch" class="form-control" require><option value=Civil>Civil engineering</option><option value=Computer>Computer Science</option><option value=Electrical>Electrical & Electronics Engineering</option><option value=Electronics>Electronics Engneering</option><option value=Instrumentation>Instrumentation & Control Engineering</option><option value=Mechanical>Mechanical Engineering</option></select></div><div class="form-group col-md-3"><label For="Email'+x+'">Email:<font color=red>*</font></label><input type="Email" name="Email'+x+'" class=form-control require placeholder="yourid@host.domain" /></div>	<div class="form-group col-md-3"><label for="mobile'+x+'">Mobile:<font color=red>*</font></label>    			<input type="number" name="mobile'+x+'" class=form-control require placeholder="Mobile number" />			</div>			<div class="form-group col-md-3">Is Your CoFounder a NSSCE student				<div class=row>				<div class="col-md-6">				<label for name=NSSIAN'+x+'>Yes<input type=radio name=NSSIAN'+x+' class="form-control-inline"></label></div>				<div class="col-md-6">				<label for name=NSSIAN'+x+'>No<input type=radio name=NSSIAN'+x+' class="form-control-inline"></label></div>				</div>			</div><a href="#" class="remove_field col-sm-3 " style="float:right" align=right ><button class="btn btn-round" ><i class="fa fa-trash" style="font-size:20px;color=red">&nbsp;Remove</i></button></a></div>'; //add input box
+    var fieldHTML       ='<div class="row"><div class="form-group col-md-3"><label for="cf'+x+'name">Name of  Co Founder '+x+' :<font color=red>*</font></label><input type="text" name="cf'+x+'name" class=form-control require placeholder="First name" /></div><div class="form-group col-md-3"><label for="cf'+x+'lname">..</label><input type="text" name="cf'+x+'lname" class="form-control" require placeholder="Last name" /></div>                                   <div class="form-group col-md-3"><label for="cf'+x+'sem">Semester<font color=red>*</font></label><select name="cf'+x+'sem" class="form-control" require><option value=sem1>Semester 1</option><option value=sem2>Semester 2</option><option value=sem3>Semester 3</option><option value=sem4>Semester 4</option><option value=sem5>Semester 5</option><option value=sem6>Semester 6</option><option value=sem7>Semester 7</option><option value=sem8>Semester 8</option></select></div><div class="form-group col-md-3"><label for="cf'+x+'branch">Branch<font color=red>*</font></label><select name="cf'+x+'branch" class="form-control" require><option value=Civil>Civil Engineering</option><option value=Computer>Computer Science Engineering</option><option value=Electrical>Electrical & Electronics Engineering</option><option value=Electronics>Electronics and Communication Engineering</option><option value=Instrumentation>Instrumentation & Control Engineering</option><option value=Mechanical>Mechanical Engineering</option></select></div><div class="form-group col-md-3"><label For="Email'+x+'">Email:<font color=red>*</font></label><input type="Email" name="Email'+x+'" class=form-control require placeholder="yourid@host.domain" /></div>	<div class="form-group col-md-3"><label for="mobile'+x+'">Mobile:<font color=red>*</font></label>    			<input type="number" name="mobile'+x+'" class=form-control require placeholder="Mobile number" />			</div>			<div class="form-group col-md-3">Is Your CoFounder a NSSCE student				<div class=row>				<div class="col-md-6">				<label for name=NSSIAN'+x+'>Yes<input type=radio name=NSSIAN'+x+' class="form-control-inline"></label></div>				<div class="col-md-6">				<label for name=NSSIAN'+x+'>No<input type=radio name=NSSIAN'+x+' class="form-control-inline"></label></div>				</div>			</div><a href="#" class="remove_field col-sm-3 " style="float:right" align=right ><button class="btn btn-round" ><i class="fa fa-trash" style="font-size:20px;color=red">&nbsp;Remove</i></button></a></div>'; //add input box
     	$(wrapper).append(fieldHTML);
 
            
