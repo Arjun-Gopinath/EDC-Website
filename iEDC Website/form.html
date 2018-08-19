@@ -59,13 +59,7 @@
     </a>
     <!-- End of logo/brand -->
  </header>
-
-
-
-
-	
-
-
+ <!-- END OF site header Menu -->
 
 
 
@@ -77,8 +71,9 @@
        <div><h1 align=center style="padding-left: 13px;padding-right: 13px;padding-top: 10px">Application for Student Incubation in </h1></div>
        	<div><h1 align=center style="padding-left: 13px;padding-right: 13px;">INNOVATION AND ENTREPRENEURSHIP DEVELOPMENT CELL </h1>
        	</div><div><h1 align=center style="padding-left: 13px;padding-right: 13px;">NSS College of Engineering, Palakkad</h1></div>
+				<!--End of title-->	
 	
-	
+			<!--BEGINNING of Form-->
        	<form action="collect.php" method=post class="form-box">
        		<!--Section 1 Applicant details-->
             <div class="well" style="margin-top: 0!important;">Applicant</div>
@@ -293,7 +288,7 @@
 		</div>
 		  
 		</form>
-		
+		<!--END of Form-->
                
 	<br><br>        
 	</div>
@@ -304,7 +299,7 @@
 </html>
 
 
-
+<!--JQUERY for Adding more Co Founder Fields-->
 <script type="text/javascript">
 $(document).ready(function() {
     var max_fields      = 5; //maximum input boxes allowed
@@ -323,7 +318,7 @@ $(document).ready(function() {
            
         }
     });
-    
+
     $(wrapper).on("click",".remove_field", function(e){ //user click on remove text
        e.preventDefault(); $(this).parent('div').remove(); x--;
             } )
