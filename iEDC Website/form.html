@@ -39,8 +39,14 @@
 <style type="text/css">
 	select > option{
 		background-color: #13547a!important;
+
 		
-		
+	}
+
+	.navbar-mainmenu{
+		background-color: rgba(0, 96, 100, 0.8)!important;
+		color:black!important;
+
 	}
 	
 	
@@ -51,13 +57,32 @@
 
 
 
-	<!-- BEGIN OF site header Menu -->
+	<!-- Page Loader : just comment these lines to remove it -->
+  <div class="page-loader" id="page-loader">
+    <div>
+      <div class="icon ion-spin"></div>
+      <p>loading</p>
+    </div>
+  </div>
+
+  <!-- BEGIN OF site header Menu -->
   <header class="page-header navbar page-header-alpha scrolled-white menu-right topmenu-right">
 
-
+    <!-- Begin of menu icon toggler -->
+    <button class="navbar-toggler site-menu-icon" id="navMenuIcon">
+      <!-- Available class : menu-icon-dot / menu-icon-thick /menu-icon-random -->
+      <span class="menu-icon menu-icon-random">
+        <span class="bars">
+          <span class="bar1"></span>
+          <span class="bar2"></span>
+          <span class="bar3"></span>
+        </span>
+      </span>
+    </button>
     <!-- End of menu icon toggler -->
-		<!-- Begin of logo/brand -->
-    <a class="navbar-brand" href="index.html">
+
+    <!-- Begin of logo/brand -->
+    <a class="navbar-brand" href="#">
       <span class="logo">
         <img class="light-logo" src="img/logo.png" alt="Logo">
       </span>
@@ -67,8 +92,38 @@
       </span>
     </a>
     <!-- End of logo/brand -->
- </header>
- <!-- END OF site header Menu -->
+
+    <!-- begin of menu wrapper -->
+    <div class="all-menu-wrapper" id="navbarMenu">
+     
+
+      <!-- Begin of hamburger mainmenu menu -->
+      <nav class="navbar-mainmenu">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html#home">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="item.html">Item</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="demo.html">Demo</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- End of hamburger mainmenu menu -->
+
+      
+    </div>
+    <!-- end of menu wrapper -->
+
+  </header>
+  <!-- END OF site header Menu-->
 
 
 
@@ -303,8 +358,24 @@
 	</div>
 
 </div>
-<!-- Form script -->
+
+<!-- scripts -->
+  <!-- All Javascript plugins goes here -->
+  <script src="js/vendor/jquery-1.12.4.min.js"></script>
+
+  <!-- All vendor scripts -->
+  <script src="js/vendor/scrolloverflow.min.js"></script>
+  <script src="js/vendor/all.js"></script>
+  <script src="js/particlejs/particles.min.js"></script>
+
+  <!-- Countdown script -->
+  <script src="js/jquery.downCount.js"></script>
+
+  <!-- Form script -->
   <script src="js/form_script.js"></script>
+
+  <!-- Javascript main files -->
+  <script src="js/main.js"></script>
 </body>
 </html>
 
