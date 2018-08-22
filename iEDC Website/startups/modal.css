@@ -15,8 +15,8 @@
 /* Modal Content/Box */
 .modal-content {
     background-color: #fefefe;
-    margin:  1%; /* 15% from the top and centered */
-    padding: 1;
+    margin:  auto; /* 15% from the top and centered */
+    padding: 1px;
     border:  solid #888;
     width: 80%;
     height:75%; /* Could be more or less, depending on screen size */
@@ -38,17 +38,17 @@
 }
 /* Modal Header */
 .modal-header {
-    padding: 1;
+    padding: 0;
     background-color: #5cb85c;
     color: white;
 }
 
 /* Modal Body */
-.modal-body {padding: 1;}
+.modal-body {padding: 0;}
 
 /* Modal Footer */
 .modal-footer {
-    padding: 1;
+    padding: 0;
     background-color: #5cb85c;
     color: white;
 }
@@ -58,7 +58,7 @@
     position: relative;
     background-color: #fefefe;
     margin: auto;
-    padding: 1;
+    padding: 1px;
     border:  solid #888;
     width: 80%;
     height:75%;
