@@ -4,12 +4,16 @@
     background: rgba(0, 0, 0, 0.2);
     top: 66px;
     margin-top: -50px; }
+
+
     @media (min-width: 768px) {
       .project-slider .fp-controlArrow {
-        top: 82px; } }
+        top: 82px; }
+         }
     @media (min-width: 960px) {
       .project-slider .fp-controlArrow {
-        top: 50%; } }
+        top: 50%; }
+         }
   .project-slider .fp-controlArrow.fp-prev {
     left: 16px;
     height: 48px;
@@ -19,8 +23,10 @@
     transition: 0.3s;
     border: 1px solid rgba(255, 255, 255, 0.2); }
     @media (min-width: 768px) {
+
       .project-slider .fp-controlArrow.fp-prev {
-        left: 234px; } }
+        left: 234px; }
+         }
     .project-slider .fp-controlArrow.fp-prev:before {
       content: "";
       position: absolute;
@@ -34,6 +40,7 @@
               transform: rotate(45deg);
       -webkit-transition: 0.2s;
       transition: 0.2s; }
+
     .project-slider .fp-controlArrow.fp-prev:after {
       content: "";
       top: 14px;
@@ -66,7 +73,8 @@
     border: 1px solid rgba(255, 255, 255, 0.2); }
     @media (min-width: 768px) {
       .project-slider .fp-controlArrow.fp-next {
-        left: 234px; } }
+        left: 234px; }
+         }
     .project-slider .fp-controlArrow.fp-next:before {
       content: "";
       position: absolute;
@@ -102,6 +110,7 @@
               transform: none; }
 .fp-slides {
   width: 100%; }
+
 .btn_1-primary {
   color: #ffffff;
   border: 1px solid transparent;
@@ -275,11 +284,12 @@
     .btn_1s-action .btn_1 {
       width: auto;
       margin-left: 2px;
-      margin-right: 2px; } }
+      margin-right: 2px; }
+       }
 
 .slide-wrapper {
-  width: 50%;
-  height: 50%;
+  width: 100%;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -301,37 +311,44 @@
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
-      margin-left: 0; } }
+      margin-left: 0; }
+       }
   .slide-wrapper .item-wrapper {
+    width:800px;
+    height:auto;
     position: relative; }
-  .slide-wrapper .illustr_1 {
+  .slide-wrapper .illustr {
     position: relative; }
-    .slide-wrapper .illustr_1 .img_1 {
-      width: 100%;
-      height: 300px; }
+    .slide-wrapper .illustr img {
+       width:100%;
+      height: 380px; }
       @media (min-width: 768px) {
-        .slide-wrapper .illustr_1 .img_1 {
-          height: 50vh; } }
+        .slide-wrapper .illustr img {
+          width:100%;
+          height: 380; } }
       @media (min-width: 960px) and (orientation: landscape) {
-        .slide-wrapper .illustr_1 .img_1 {
-          width: 400px;
-          width: 40vw;
-          height: 400px;
-          height: 66vh; } }
+        .slide-wrapper .illustr img {
+          width: 600px;
+          height: 420px;
+           } }
   .slide-wrapper .legend_1 {
     padding: 16px;
     padding-top: 32px;
+    position: relative;
+    height:400;
+    width:100%;
     padding-right:2px;
-    padding-bottom: 32px; }
+    padding-bottom: 26px; }
     @media (min-width: 768px) {
       .slide-wrapper .legend_1 {
         padding: 32px 64px; } }
     @media (min-width: 960px) and (orientation: landscape) {
       .slide-wrapper .legend_1 {
         position: absolute;
-        left: 62%;
+        left: 45%;
         top: 48px;
-        width: 250px;
+        height:500px;
+        width: 370px;
         margin-left: 2rem;
         padding: 0; } }
     @media (min-width: 1200px) and (orientation: landscape) {
@@ -346,10 +363,13 @@
       font-weight: bold; }
       @media (min-width: 960px) {
         .slide-wrapper .legend_1 h3 {
-          font-size: 3.5rem; } }
+          font-size: 3.5rem; } 
+        }
+
       @media (min-width: 960px) and (orientation: landscape) {
         .slide-wrapper .legend_1 h3 {
-          margin-left: -96px; } }
+          margin-left: -96px; }
+           }
     .slide-wrapper .legend_1 h4 {
       font-size: 1.25rem; }
     .slide-wrapper .legend_1 .icons {
@@ -434,5 +454,4 @@
             padding-right: 64px;
             padding-top: 144px;
             padding-bottom: 144px; } }
-
 
