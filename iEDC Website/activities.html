@@ -4,6 +4,9 @@
 
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="author" content="SemiColonWeb" />
+	<!-- Disable screen scaling-->
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0">
+
 
 	<!-- Stylesheets
 	============================================= -->
@@ -13,26 +16,127 @@
 	<link rel="stylesheet" href="css/animate_timeline.css" type="text/css" />
 	<link rel="stylesheet" href="css/magnific-popup_timeline.css" type="text/css" />
 	<link rel="stylesheet" href="fonts/font-awesome.min.css">
-
+	
 	<link rel="stylesheet" href="css/responsive_timeline.css" type="text/css" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
 
 	<!-- Document Title
 	============================================= -->
 	<title>iEDC Activities</title>
+		<!--Page Icon in title bar-->
+		<link rel="icon" type="img/png" href="img/logo.ico">
+	
+	<style type="text/css">
+		#act,#page-title,#content{
+		background: linear-gradient(to right,#13547a,#80d0c7 );
+		
+		}
+		h1,h2,p,#thead,.text{
+			color:#ffffff!important;
+		}
+		#dateline{
+		background-color: rgba(0, 96, 100, 0.9);
+		color:#ffffff;
+		border-radius: 25px;
+
+		}
+		.entry-meta,{
+			color:#000000!important;
+		}
+
+		
+	</style>
+	
+	<!-- Main CSS files -->
+  	<link rel="stylesheet" href="css/activitiesnavbar.css">
+  	<link rel="stylesheet" href="fonts/opensans/stylesheet.css">
+	
+
+
 </head>
 
-<body class="stretched">
+<body class="stretched" id=act>
+
+
+
+
+  <!-- BEGIN OF site header Menu -->
+  <header class="page-header navbar page-header-alpha scrolled-white menu-right topmenu-right">
+
+    <!-- Begin of menu icon toggler -->
+    <button class="navbar-toggler site-menu-icon" id="navMenuIcon">
+      <!-- Available class : menu-icon-dot / menu-icon-thick /menu-icon-random -->
+      <span class="menu-icon menu-icon-random">
+        <span class="bars">
+          <span class="bar1"></span>
+          <span class="bar2"></span>
+          <span class="bar3"></span>
+        </span>
+      </span>
+    </button>
+    <!-- End of menu icon toggler -->
+
+    <!-- Begin of logo/brand -->
+    <a class="navbar-brand" href="index.html">
+      <span class="logo">
+        <img class="light-logo" src="img/logo.png" alt="Logo">
+      </span>
+      <span class="text">
+        iEDC NSSCE
+      
+      </span>
+    </a>
+    <!-- End of logo/brand -->
+
+    <!-- begin of menu wrapper -->
+    <div class="all-menu-wrapper" id="navbarMenu">
+     
+
+      <!-- Begin of hamburger mainmenu menu -->
+      <nav class="navbar-mainmenu">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html#home">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="item.html">Item</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="demo.html">Demo</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- End of hamburger mainmenu menu -->
+
+      
+    </div>
+    <!-- end of menu wrapper -->
+
+  </header>
+  <!-- END OF site header Menu--><br><br>
+
+
+
+
+
+
+
+
+
 	<div id="wrapper" class="clearfix">
 
 		<section id="page-title">
 
 			<div class="container clearfix">
-				<h1>iEDC NSSCE</h1>
-				<span>Activities of past few years... </span>
-				<ol class="breadcrumb">
+				<span id="thead">Activities we have done so far</span>
+				<!-- <ol class="breadcrumb">
 					<b><li class="fa fa-home"><a href="index.html">Home</a></li></b>
-				</ol>
+				</ol> -->
 			</div>
 
 		</section>
@@ -52,7 +156,7 @@
 
 
 
-                 <div class="entry entry-date-section"><span>March 2018 --- April 2017</span></div>
+                 <div class="entry entry-date-section"><span id="dateline">March 2018 --- April 2017</span></div>
 
 						
 
@@ -64,13 +168,13 @@
 							<div class="entry-image">
 							</div>
 							<div class="entry-title">
-								<h2>Participation in Huddle Kerala</h2>
+								<h2>Participation in #Huddle Kerala</h2>
 							</div>
 							<ul class="entry-meta clearfix">
 								<li><i class="fa fa-calendar"></i> April 6-7, 2018</li>
 							</ul>
 							<div class="entry-content">
-								<p>5 students participated in the Huddle Kerala program which is organaised by Government of Kerala.
+								<p>5 students participated in the #Huddle Kerala program which is organaised by Government of Kerala.
                         It was conducted at Hotel Leela Kovalam.</p>
 							</div>
 						</div>
@@ -84,13 +188,13 @@
 							<div class="entry-image">
 							</div>
 							<div class="entry-title">
-								<h2>Participated in FUTURE</h2>
+								<h2>Participated in #FUTURE</h2>
 							</div>
 							<ul class="entry-meta clearfix">
 								<li><i class="fa fa-calendar"></i> March 22-23, 2018</li>
 							</ul>
 							<div class="entry-content">
-								<p>5 students participated in FUTURE a program organised by government of Kerala at Le-Meridian KOCHI.</p>
+								<p>5 students participated in #FUTURE a program organised by government of Kerala at Le-Meridian KOCHI.</p>
 							</div>
 						</div>
 
@@ -117,12 +221,14 @@
 							<div class="entry-timeline">
 								<div class="timeline-divider"></div>
 							</div>
+
+
 							<div class="entry-image">
-								<div class="fslider" data-animation="fade" data-pagi="false" data-pause="6000" data-lightbox="gallery">
+								<div class="fslider" data-arrows="false" data-lightbox="gallery">
 									<div class="flexslider">
 										<div class="slider-wrap">
-											<a href="img/activity/10.jpg" data-lightbox="gallery-item"><div class="slide"><img class="image_fade" src="img/activity/10.jpg" alt="Bagged 2 prizes in Startup i3"></div></a>
-											<a href="img/activity/11.jpg" data-lightbox="gallery-item"><div class="slide"><img class="image_fade" src="img/activity/11.jpg" alt="Bagged 2 prizes in Startup i3"></div></a>
+											<div class="slide"><a href="img/activity/10.jpg" data-lightbox="gallery-item"><img class="image_fade" src="img/activity/10.jpg" alt="Bagged 2 prizes in Startup i3"></a></div>
+											<div class="slide"><a href="img/activity/11.jpg" data-lightbox="gallery-item"><img class="image_fade" src="img/activity/11.jpg" alt="Bagged 2 prizes in Startup i3"></a></div>
 										</div>
 									</div>
 								</div>
@@ -321,7 +427,7 @@
 						</div>
 
 
-<div class="entry entry-date-section"><span>April 2017 --- March 2016</span></div>
+<div class="entry entry-date-section"><span id="dateline">April 2017 --- March 2016</span></div>
 
 
 
@@ -378,10 +484,15 @@
 							<div class="entry-timeline">
 								<div class="timeline-divider"></div>
 							</div>
-							<div class="entry-image clearfix">
-								<div class="portfolio-single-image" data-big="3" scale= data-lightbox="gallery">
-									<a href="img/activity/5.jpg" data-lightbox="gallery-item"><img class="image_fade" src="img/activity/5.jpg" alt="ENTREPRENIA-16"></a>
-									<a href="img/activity/6.jpg" data-lightbox="gallery-item"><img class="image_fade" src="img/activity/6.jpg" alt="ENTREPRENIA-16"></a>
+
+							<div class="entry-image">
+								<div class="fslider" data-arrows="false" data-lightbox="gallery">
+									<div class="flexslider">
+										<div class="slider-wrap">
+											<div class="slide"><a href="img/activity/5.jpg" data-lightbox="gallery-item"><img class="image_fade" src="img/activity/5.jpg" alt="ENTREPRENIA-16"></a></div>
+											<div class="slide"><a href="img/activity/6.jpg" data-lightbox="gallery-item"><img class="image_fade" src="img/activity/6.jpg" alt="ENTREPRENIA-16"></a></div>
+										</div>
+									</div>
 								</div>
 							</div>
 							<div class="entry-title">
@@ -439,8 +550,8 @@
 								<div class="fslider" data-arrows="false" data-lightbox="gallery">
 									<div class="flexslider">
 										<div class="slider-wrap">
-											<a href="img/activity/2.jpg" data-lightbox="gallery-item"><div class="slide"><img class="image_fade" src="img/activity/2.jpg" alt="Start In College Symposium"></div></a>
-											<a href="img/activity/3.jpg" data-lightbox="gallery-item"><div class="slide"><img class="image_fade" src="img/activity/3.jpg" alt="Start In College Symposium"></div></a>
+											<div class="slide"><a href="img/activity/2.jpg" data-lightbox="gallery-item"><img class="image_fade" src="img/activity/2.jpg" alt="Start In College Symposium"></a></div>
+											<div class="slide"><a href="img/activity/3.jpg" data-lightbox="gallery-item"><img class="image_fade" src="img/activity/3.jpg" alt="Start In College Symposium"></a></div>
 										</div>
 									</div>
 								</div>
@@ -700,7 +811,7 @@
 						</div>
 
 
-<div class="entry entry-date-section"><span>March 2016 --- April 2015</span></div>
+<div class="entry entry-date-section"><span id="dateline">March 2016 --- April 2015</span></div>
 
 
 
@@ -1039,12 +1150,20 @@
 							<div class="entry-timeline">
 								<div class="timeline-divider"></div>
 							</div>
+
+
+
 							<div class="entry-image">
-					          <div class="portfolio-single-image" data-big="3" scale= data-lightbox="gallery">
-									<a href="img/activity/24.jpg" data-lightbox="gallery-item"><img class="image_fade" src="img/activity/24.jpg" alt="ENTREPRENIA-15"></a>
-									<a href="img/activity/25.jpg" data-lightbox="gallery-item"><img class="image_fade" src="img/activity/25.jpg" alt="ENTREPRENIA-15"></a>
+								<div class="fslider" data-arrows="false" data-lightbox="gallery">
+									<div class="flexslider">
+										<div class="slider-wrap">
+											<div class="slide"><a href="img/activity/24.jpg" data-lightbox="gallery-item"><img class="image_fade" src="img/activity/24.jpg" alt="ENTREPRENIA-15"></a></div>
+											<div class="slide"><a href="img/activity/25.jpg" data-lightbox="gallery-item"><img class="image_fade" src="img/activity/25.jpg" alt="ENTREPRENIA-15"></a></div>
+										</div>
+									</div>
+								</div>
 							</div>
-						    </div>
+
 							<div class="entry-title">
 								<h2><img class="image_fade" src="img/activity/4.jpg" alt="Enterprenenia-16" height=50 width=50>ENTREPRENIA-15</h2>
 							</div>
@@ -1253,7 +1372,7 @@
 						</div>
 
 
-<div class="entry entry-date-section"><span>March 2015 --- April 2014</span></div>
+<div class="entry entry-date-section"><span id="dateline">March 2015 --- April 2014</span></div>
 
 
 						   <div class="entry clearfix">
@@ -1291,7 +1410,7 @@
 							</ul>
 							<div class="entry-content">
 								<p>Seminar on “Importance of entrepreneurship for Engineers in the modern era".40 students attended.</p>
-								<a href="blog-single.html" class="more-link">Read More</a>
+								<!-- <a href="blog-single.html" class="more-link">Read More</a> -->
 							</div>
 						</div>
 
@@ -1313,7 +1432,7 @@
 							</ul>
 							<div class="entry-content">
 								<p>Workshop on “Personal Entrepreneurial Competencies”</p>
-								<a href="blog-single.html" class="more-link">Read More</a>
+								<!-- <a href="blog-single.html" class="more-link">Read More</a> -->
 							</div>
 						</div>
 
@@ -1333,7 +1452,7 @@
 							</ul>
 							<div class="entry-content">
 								<p>Seminar on “Opportunities of Civil Engineers in consultancy”.40 students participated.</p>
-								<a href="blog-single.html" class="more-link">Read More</a>
+								<!-- <a href="blog-single.html" class="more-link">Read More</a> -->
 							</div>
 						</div>
 
@@ -1352,7 +1471,7 @@
 							</ul>
 							<div class="entry-content">
 								<p>Workshop on “Personal Entrepreneurial Competencies”.45 attended.</p>
-								<a href="blog-single.html" class="more-link">Read More</a>
+								<!-- <a href="blog-single.html" class="more-link">Read More</a> -->
 							</div>
 						</div>
 
@@ -1373,7 +1492,7 @@
 							</ul>
 							<div class="entry-content">
 								<p>Workshop on “Personal Entrepreneurial Competencies” at Entrepreneurial Development(KIED) at Kalamassery, Ernakulam.11 students attended.</p>
-								<a href="blog-single.html" class="more-link">Read More</a>
+								<!-- <a href="blog-single.html" class="more-link">Read More</a> -->
 							</div>
 						</div>
 
@@ -1394,7 +1513,7 @@
 							</ul>
 							<div class="entry-content">
 								<p>Installation of Idea Boxes (3 rd week of September 2014)</p>
-								<a href="blog-single.html" class="more-link">Read More</a>
+								<!-- <a href="blog-single.html" class="more-link">Read More</a> -->
 							</div>
 						</div>
 
@@ -1416,7 +1535,7 @@
 							</ul>
 							<div class="entry-content">
 								<p>Participation in YES Summit organized by Govt. of Kerala, Industries Dept., Startup village, Techno park at Adlux Convention centre ,Angamaly.11 students attended.</p>
-								<a href="blog-single.html" class="more-link">Read More</a>
+								<!-- <a href="blog-single.html" class="more-link">Read More</a> -->
 							</div>
 						</div>
 
@@ -1434,7 +1553,7 @@
 							</ul>
 							<div class="entry-content">
 								<p>Entrepreneurship Day celebrations: Talk on "Moulding Entrepreneurs”.45 students attended.</p>
-								<a href="blog-single.html" class="more-link">Read More</a>
+								<!-- <a href="blog-single.html" class="more-link">Read More</a> -->
 							</div>
 						</div>
 
@@ -1445,7 +1564,7 @@
 
 			<!-- Copyrights
 			============================================= -->
-			<div id="copyrights">
+			<!-- <div id="copyrights">
 
 				<div class="container clearfix">
 
@@ -1473,7 +1592,7 @@
 
 				</div>
 
-			</div><!-- #copyrights end -->
+			</div> --><!-- #copyrights end -->
 
 		</footer><!-- #footer end -->
 
@@ -1493,8 +1612,18 @@
 	<script src="js/functions_timeline.js"></script>
 
 
+	<!-- scripts -->
+ <!-- All Javascript plugins goes here -->
+  
+  <!-- All vendor scripts -->
 
+  <script src="js/vendor/all.js"></script>
 
+  <!-- Form script -->
+  <script src="js/form_script.js"></script>
+
+  <!-- Javascript main files -->
+  <script src="js/main.js"></script>
 
 
 	<script>
@@ -1552,3 +1681,4 @@
 	</script>
 
 </body>
+</html>
