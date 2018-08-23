@@ -4,6 +4,8 @@
 
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="author" content="SemiColonWeb" />
+	<!-- Disable screen scaling-->
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1, user-scalable=0">
 
 
 	<!-- Stylesheets
@@ -16,7 +18,7 @@
 	<link rel="stylesheet" href="fonts/font-awesome.min.css">
 	
 	<link rel="stylesheet" href="css/responsive_timeline.css" type="text/css" />
-	<meta name="viewport" content="width=device-width, initial-scale=1" />
+
 
 	<!-- Document Title
 	============================================= -->
@@ -29,7 +31,7 @@
 		background: linear-gradient(to right,#13547a,#80d0c7 );
 		
 		}
-		h1,h2,p,#thead{
+		h1,h2,p,#thead,.text{
 			color:#ffffff!important;
 		}
 		#dateline{
@@ -38,25 +40,99 @@
 		border-radius: 25px;
 
 		}
-		li{
+		.entry-meta,{
 			color:#000000!important;
 		}
 
 		
 	</style>
 	
+	<!-- Main CSS files -->
+  	<link rel="stylesheet" href="css/activitiesnavbar.css">
+  	<link rel="stylesheet" href="fonts/opensans/stylesheet.css">
 	
 
 
 </head>
 
 <body class="stretched" id=act>
+
+
+
+
+  <!-- BEGIN OF site header Menu -->
+  <header class="page-header navbar page-header-alpha scrolled-white menu-right topmenu-right">
+
+    <!-- Begin of menu icon toggler -->
+    <button class="navbar-toggler site-menu-icon" id="navMenuIcon">
+      <!-- Available class : menu-icon-dot / menu-icon-thick /menu-icon-random -->
+      <span class="menu-icon menu-icon-random">
+        <span class="bars">
+          <span class="bar1"></span>
+          <span class="bar2"></span>
+          <span class="bar3"></span>
+        </span>
+      </span>
+    </button>
+    <!-- End of menu icon toggler -->
+
+    <!-- Begin of logo/brand -->
+    <a class="navbar-brand" href="index.html">
+      <span class="logo">
+        <img class="light-logo" src="img/logo.png" alt="Logo">
+      </span>
+      <span class="text">
+        iEDC NSSCE
+      
+      </span>
+    </a>
+    <!-- End of logo/brand -->
+
+    <!-- begin of menu wrapper -->
+    <div class="all-menu-wrapper" id="navbarMenu">
+     
+
+      <!-- Begin of hamburger mainmenu menu -->
+      <nav class="navbar-mainmenu">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html#home">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="item.html">Item</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="demo.html">Demo</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- End of hamburger mainmenu menu -->
+
+      
+    </div>
+    <!-- end of menu wrapper -->
+
+  </header>
+  <!-- END OF site header Menu--><br><br>
+
+
+
+
+
+
+
+
+
 	<div id="wrapper" class="clearfix">
 
 		<section id="page-title">
 
 			<div class="container clearfix">
-				<h1>iEDC NSSCE</h1>
 				<span id="thead">Activities we have done so far</span>
 				<!-- <ol class="breadcrumb">
 					<b><li class="fa fa-home"><a href="index.html">Home</a></li></b>
@@ -1536,8 +1612,18 @@
 	<script src="js/functions_timeline.js"></script>
 
 
+	<!-- scripts -->
+ <!-- All Javascript plugins goes here -->
+  
+  <!-- All vendor scripts -->
 
+  <script src="js/vendor/all.js"></script>
 
+  <!-- Form script -->
+  <script src="js/form_script.js"></script>
+
+  <!-- Javascript main files -->
+  <script src="js/main.js"></script>
 
 
 	<script>
@@ -1595,3 +1681,4 @@
 	</script>
 
 </body>
+</html>
