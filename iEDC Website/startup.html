@@ -47,7 +47,7 @@
          <div class="team">
             <div class="row" >
                <div class="col-md-3 slideanim">
-                  <button id="myBtn" class="btn btn-outline-white">
+                  <button id="offcube" class="btn btn-outline-white" onclick="modal_create(this.id)">
                      <div class="team-player">
                         <div class="card card-plain">
                            <div class="col-md-8 ml-auto mr-auto">
@@ -65,16 +65,19 @@
                      </div>
                </div>
                </button>
-               <div id="myModal" class="modal">
+			   <div id="offcube_id">
+               <div id="offcube_modal" class="modal">
                   <div class="modal-content">
-                     <div id="modal_body" class="modal-body">
-                        <span class="close">&times;</span>
+                     <div id="offcube_modal_body" class="modal-body">
+                        <span class="close offcube_class">&times;</span>
                         <iframe width="70%" height="600" src="startups/OFFCUBE TECHNOLOGIES.html"></iframe>
                      </div>
                   </div>
                </div>
+			   </div>
+			 
                <div class="col-md-3 slideanim">
-                  <button id="alilabutton" class="btn btn-outline-white">
+                  <button id="alila" class="btn btn-outline-white"  onclick="modal_create(this.id)">
                      <div class="team-player">
                         <div class="card card-plain">
                            <div class="col-md-8 ml-auto mr-auto">
@@ -92,16 +95,16 @@
                      </div>
                </div>
                </button>
-               <div id="alilamodal" class="modal">
+               <div id="alila_modal" class="modal" >
                   <div class="modal-content">
-                     <div id="modal_body_alila" class="modal-body">
-                        <span class="close">&times;</span>
+                     <div id="alila_modal_body" class="modal-body">
+                        <span class="close alila_class">&times;</span>
                         <iframe width="70%" height="600" src="startups/ALILA CREATIONS.html"></iframe>
                      </div>
                   </div>
                </div>
                <div class="col-md-3 slideanim">
-                  <button class="btn btn-outline-white">
+                  <button id="hexaren" class="btn btn-outline-white"  onclick="modal_create(this.id)">
                      <div class="team-player">
                         <div class="card card-plain">
                            <div class="col-md-8 ml-auto mr-auto">
@@ -119,6 +122,14 @@
                      </div>
                </div>
                </button>
+			   <div id="hexaren_modal" class="modal">
+                  <div class="modal-content">
+                     <div id="hexaren_modal_body" class="modal-body">
+                        <span class="close hexaren_class">&times;</span>
+                        <iframe width="70%" height="600" src="startups/ALILA CREATIONS.html"></iframe>
+                     </div>
+                  </div>
+               </div>
                <div class="col-md-3 slideanim">
                   <button class="btn btn-outline-white" style="width: 99%;height: 97%;">
                      <div class="team-player">
@@ -586,40 +597,33 @@
       <script src="js/material-kit.js" type="text/javascript"></script>
       <script type="text/javascript">
          // Get the modal
-         var modal = document.getElementById('myModal');
-		 var modalbody = document.getElementById('modal_body');
-		 var btn = document.getElementById("myBtn");
-		 var span = document.getElementsByClassName("close")[0];
-		 btn.onclick = function() {
-             modal.style.display = "block";
-         }
-		 // When the user clicks on <span> (x), close the modal
-         span.onclick = function() {
+		 var modalbody="";
+		 var modal="";
+		 function modal_create(modal_id)
+		 {
+			console.log(modal_id+'_modal');
+			modal = document.getElementById(modal_id+'_modal');
+			modal.style.display = "block";
+			modalbody = document.getElementById(modal_id+'_modal_body');
+			var span = document.getElementsByClassName(modal_id+"_class")[0];
+			
+			span.onclick = function() {
              modal.style.display = "none";
 			}
+			
+		 }
 		 
-         var modal_alila = document.getElementById('alilamodal');        
-         var alilabutton = document.getElementById("alilabutton");
-         var span_alila = document.getElementsByClassName("close")[1];
-		 var modalbodyalila = document.getElementById("modal_body_alila");
-		alilabutton.onclick = function() {
-             modal_alila.style.display = "block";
-         	
-         }
-
-         span_alila.onclick = function() {
-         	
-             modal_alila.style.display = "none";
-      }
+		 
          
          // When the user clicks anywhere outside of the modal, close it
          window.onclick = function(event) {
 		 //console.log("clicked on window");
 		 console.log(event.target);
 
-             if (event.target == modalbody || event.target == modalbodyalila) {
+             if (event.target == modalbody) {
+			 console.log(modal);
                  modal.style.display = "none";
-				 modal_alila.style.display = "none";
+				 //modal_alila.style.display = "none";
 				  //console.log("clicked outside modal");
              }
 			 
@@ -680,3 +684,19 @@
       </script>
    </body>
 </html>
+<!-- To create a modal 
+
+<div id="alila_modal" class="modal" >
+                  <div class="modal-content">
+                     <div id="alila_modal_body" class="modal-body">
+                        <span class="close alila_class">&times;</span>
+                        <iframe width="70%" height="600" src="startups/ALILA CREATIONS.html"></iframe>
+                     </div>
+                  </div>
+               </div>
+
+			   1.Paste the above snippet under </button> tag
+			   2.change button tag as <button id="alila" class="btn btn-outline-white" onclick="modal_create(this.id)"> and change the "alila " in id="alila" in the button tag to 
+					something unique
+			   3.replace alila in the above snippet with the unique_id you have just provided in the button tag.
+			   4.Done!
