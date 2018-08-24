@@ -95,7 +95,7 @@
 }
 .main-timeline .timeline:nth-child(n) .title,
 .main-timeline .timeline:nth-child(n) .title:after{
-    background: #9f84c4;
+    background: #037FD5;
 }
 @media only screen and (max-width: 990px){
     .main-timeline{ width: 100%; }
