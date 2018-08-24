@@ -24,8 +24,7 @@
             <!-- Vendor CSS style -->
             <link rel="stylesheet" href="css/pageloader.css">
 
-             <!-- Uncomment below to load individualy vendor CSS -->
-            <link rel="stylesheet" href="css/bootstrap.min.css">
+          
 
             <!-- Main CSS files -->
 
@@ -47,39 +46,63 @@
            border: #3e8e41;
          }
          @media screen and (min-width: 768px) {
-           h4.card-title {
-             font-size:1.2vw;
-           },
-         h4.card-description {
-             font-size:1.2vw;
+          p.card-description {
+             font-size:1vw;
+           }
+         }
+         @media screen and (min-width: 768px) {
+           .card-title {
+             font-size:1.6vw;
+           }
+         }
+         @media screen and (min-width: 768px) {
+         small.card-description {
+             font-size:1vw;
            }
          }
 
          @media screen and (max-width: 767px) {
-           h4.card-title {
-             font-size:4.5vw;
-           },
-           h4.card-description {
+           p.card-description {
+             font-size:3vw;
+           }
+         }
+         @media screen and (max-width: 767px) {
+           .card-title {
              font-size:4.5vw;
            }
+         }
+         @media screen and (max-width: 767px) {
+           small.card-description {
+             font-size:3vw;
+           }
+
          }
          .page-header{
             height:0!important;
             background: transparent!important;
             border: none!important;
+            box-shadow: none!important;
          }
 
          h6{
             font-size: 6rem!important;
             font-weight: bold!important;
             color:white!important;
-            height: auto!important;
+            height:0!important;
             left: 0!important;
          }
          h6:hover{
             color: #D1335B!important;
             opacity: 1;
             transition: 0.2s;
+         }
+         ul {
+         padding: 0!important;
+         list-style: none!important;
+         }
+         a,h6{
+            margin: 0!important;
+            padding: 0!important;
          }
 
          .all-menu-wrapper{
@@ -93,12 +116,13 @@
          }
          .landing-page,body,.main,.section{
           background: linear-gradient(to right,#13547a,#80d0c7 )!important;
+          mar
           }
           
       </style>
       
    </head>
-   <body class="landing-page sidebar-collapse" style="background: linear-gradient(to right,#13547a,#80d0c7 )!important;">
+   <body class="landing-page sidebar-collapse" style="background: linear-gradient(to right,#13547a,#80d0c7 )!important; margin: 0">
 
       
 
@@ -133,7 +157,7 @@
         <img class="light-logo" src="img/logo.png" alt="Logo">
       </span>
       <span class="text">
-        <span class="line">iEDC NSSCE</span>
+        <span class="line"><font color=white>iEDC NSSCE</font></span>
         <span class="line sub"></span>
       </span>
     </a>
@@ -146,20 +170,15 @@
       <!-- Begin of hamburger mainmenu menu -->
       <nav class="navbar-mainmenu">
         <ul class="navbar-nav mr-auto">
-          <li class="nav-item ">
-            <a class="nav-link" href="index.html#home"><h6 align="left" style="margin:0!important;">Home</h6>
-            
+         
+          <li class="nav-item" >
+            <a  href="index.html#home"><h6 align="left" >Home</h6><br>
+            <a  href="gallery.html"><h6 align="left" >Gallery</h6><br>
+            <a  href="item.html"><h6 align="left" >Item</h6><br>
+            <a  href="demo.html"><h6 align="left" >Demo</h6><br><br>
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="gallery.html"><h6>Gallery</h6></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="item.html"><h6>Item</h6></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="demo.html"><h6>Demo</h6></a>
-          </li>
+          
         </ul>
       </nav>
       <!-- End of hamburger mainmenu menu -->
@@ -171,29 +190,14 @@
   </header>
   <!-- END OF site header Menu-->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
    
-      <div class="main main-raised" style="background: transparent;">
+      <div class="main main-raised" style="background: transparent; margin:0px">
       <div class="section text-center" id="myteam" style="padding: 30px">
           <div class="container text-center">
             <div class="row">
-               <div class="col-md-12"><br><br><br>
-                  <h1>The Start-Up Page</h1>
-                  <div class="typed">
+               <div class="col-md-12">
+                  <h1 style="color: white">The Start-Up Page</h1>
+                  <div class="typed" style="color: white">
                      <h4>Meet some of the best and newest startups in <b>NSSCE</b></h4>
                   </div>
                   <br>
@@ -201,13 +205,12 @@
             </div>
          </div>
 
-         <h2 class="title">Our Startups</h2>
          <div class="team">
             <div class="row" >
                <div class="col-md-3 slideanim">
                   <button id="TRICODIA" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
-                     <div class="team-player">
-                        <div class="card card-plain">
+                     <div class="team-player" >
+                        <div class="card card-plain" style="border: 0">
                            <div class="col-md-8 ml-auto mr-auto">
                               <img src="img/startups/TRICODIA.png" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
                            </div>
@@ -235,7 +238,7 @@
                <div class="col-md-3 slideanim">
                   <button id="OUI" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
                      <div class="team-player">
-                        <div class="card card-plain">
+                        <div class="card card-plain" style="border: 0">
                            <div class="col-md-8 ml-auto mr-auto">
                               <img src="img/startups/OUI.png" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
                            </div>
@@ -263,7 +266,7 @@
                <div class="col-md-3 slideanim">
                   <button id="UNI5IVE" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
                      <div class="team-player">
-                        <div class="card card-plain">
+                        <div class="card card-plain" style="border: 0">
                            <div class="col-md-8 ml-auto mr-auto">
                               <img src="img/startups/UNI5IVE.jpg" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
                            </div>
@@ -291,7 +294,7 @@
                <div class="col-md-3 slideanim">
                   <button id="offcube" class="btn btn-outline-white box foo" onclick="modal_create(this.id)">
                      <div class="team-player">
-                        <div class="card card-plain">
+                        <div class="card card-plain" style="border: 0">
                            <div class="col-md-8 ml-auto mr-auto">
                               <img src="img/startups/OFFCUBE TECHNOLOGIES.jpg" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
                            </div>
@@ -323,7 +326,7 @@
                <div class="col-md-3 slideanim">
                   <button id="alila" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
                      <div class="team-player">
-                        <div class="card card-plain">
+                        <div class="card card-plain" style="border: 0">
                            <div class="col-md-8 ml-auto mr-auto">
                               <img src="img/startups/ALILA CREATIONS.png" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
                            </div>
@@ -351,7 +354,7 @@
                <div class="col-md-3 slideanim">
                   <button id="hexaren" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
                      <div class="team-player">
-                        <div class="card card-plain">
+                        <div class="card card-plain" style="border: 0">
                            <div class="col-md-8 ml-auto mr-auto">
                               <img src="img/startups/HEXAREN.jpg" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
                            </div>
@@ -379,7 +382,7 @@
                <div class="col-md-3 slideanim">
                   <button id="techacer" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
                      <div class="team-player">
-                        <div class="card card-plain">
+                        <div class="card card-plain" style="border: 0">
                            <div class="col-md-8 ml-auto mr-auto">
                               <img src="img/startups/TECHACER TECHNOLOGIES.png" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
                            </div>
@@ -407,7 +410,7 @@
                <div class="col-md-3 slideanim">
                   <button id="root" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
                      <div class="team-player">
-                        <div class="card card-plain">
+                        <div class="card card-plain" style="border: 0">
                            <div class="col-md-8 ml-auto mr-auto">
                               <img src="img/startups/ROOTLABS.png" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
                            </div>
@@ -438,7 +441,7 @@
                <div class="col-md-3 slideanim">
                   <button id="toy" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
                      <div class="team-player">
-                        <div class="card card-plain">
+                        <div class="card card-plain" style="border: 0">
                            <div class="col-md-8 ml-auto mr-auto">
                               <img src="img/startups/TOYSMITH.jpg" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
                            </div>
@@ -467,7 +470,7 @@
                <div class="col-md-3 slideanim">
                   <button id="rustic" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
                      <div class="team-player">
-                        <div class="card card-plain">
+                        <div class="card card-plain" style="border: 0">
                            <div class="col-md-8 ml-auto mr-auto">
                               <img src="img/startups/RUSTIC TECHNOLOGIES.png" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
                            </div>
@@ -495,7 +498,7 @@
                <div class="col-md-3 slideanim">
                   <button id="cafe" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
                      <div class="team-player">
-                        <div class="card card-plain">
+                        <div class="card card-plain" style="border: 0">
                            <div class="col-md-8 ml-auto mr-auto">
                               <img src="img/startups/CAFÉ BREAK.png" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
                            </div>
@@ -523,7 +526,7 @@
                <div class="col-md-3 slideanim">
                   <button id="arc" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
                      <div class="team-player">
-                        <div class="card card-plain">
+                        <div class="card card-plain" style="border: 0">
                            <div class="col-md-8 ml-auto mr-auto">
                               <img src="img/startups/ARC STUDIOS.png" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
                            </div>
@@ -553,7 +556,7 @@
                <div class="col-md-3 slideanim">
                   <button id="cray" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
                      <div class="team-player">
-                        <div class="card card-plain">
+                        <div class="card card-plain" style="border: 0">
                            <div class="col-md-8 ml-auto mr-auto">
                               <img src="img/startups/BE CRAY.png" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
                            </div>
@@ -581,7 +584,7 @@
                <div class="col-md-3 slideanim">
                   <button id="VORAUS" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
                      <div class="team-player">
-                        <div class="card card-plain">
+                        <div class="card card-plain" style="border: 0">
                            <div class="col-md-8 ml-auto mr-auto">
                               <img src="img/startups/VORAUS.png" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
                            </div>
@@ -609,7 +612,7 @@
                <div class="col-md-3 slideanim">
                   <button id="INSI8" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
                      <div class="team-player">
-                        <div class="card card-plain">
+                        <div class="card card-plain" style="border: 0">
                            <div class="col-md-8 ml-auto mr-auto">
                               <img src="img/startups/INSI8.png" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
                            </div>
@@ -637,7 +640,7 @@
                <div class="col-md-3 slideanim">
                   <button id="ZERONE" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
                      <div class="team-player">
-                        <div class="card card-plain">
+                        <div class="card card-plain" style="border: 0">
                            <div class="col-md-8 ml-auto mr-auto">
                               <img src="img/startups/ZERONE.png" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
                            </div>
@@ -667,7 +670,7 @@
                <div class="col-md-3 slideanim">
                   <button id="KARELA" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
                      <div class="team-player">
-                        <div class="card card-plain">
+                        <div class="card card-plain" style="border: 0">
                            <div class="col-md-8 ml-auto mr-auto">
                               <img src="img/startups/KARELA.png" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
                            </div>
@@ -695,7 +698,7 @@
                <div class="col-md-3 slideanim">
                   <button id="REENBOOG" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
                      <div class="team-player">
-                        <div class="card card-plain">
+                        <div class="card card-plain" style="border: 0">
                            <div class="col-md-8 ml-auto mr-auto">
                               <img src="img/startups/REENBOOG.png" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
                            </div>
@@ -723,7 +726,7 @@
                <div class="col-md-3 slideanim">
                   <button id="slate" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
                      <div class="team-player">
-                        <div class="card card-plain">
+                        <div class="card card-plain" style="border: 0">
                            <div class="col-md-8 ml-auto mr-auto">
                               <img src="img/startups/SLATE AND PENCIL.png"alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
                            </div>
@@ -751,7 +754,7 @@
                <div class="col-md-3 slideanim">
                   <button id="PHACSIN" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
                      <div class="team-player">
-                        <div class="card card-plain">
+                        <div class="card card-plain" style="border: 0">
                            <div class="col-md-8 ml-auto mr-auto">
                               <img src="img/startups/PHACSIN.png" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
                            </div>
@@ -781,7 +784,7 @@
                <div class="col-md-3 slideanim">
                   <button id="QUICKSPLIT" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
                      <div class="team-player">
-                        <div class="card card-plain">
+                        <div class="card card-plain" style="border: 0">
                            <div class="col-md-8 ml-auto mr-auto">
                               <img src="img/startups/QUICKSPLIT.png" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
                            </div>
@@ -809,7 +812,7 @@
                <div class="col-md-3 slideanim">
                   <button id="FEDYMS" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
                      <div class="team-player">
-                        <div class="card card-plain">
+                        <div class="card card-plain" style="border: 0">
                            <div class="col-md-8 ml-auto mr-auto">
                               <img src="img/startups/FEDYMS.png" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
                            </div>
@@ -837,7 +840,7 @@
                <div class="col-md-3 slideanim">
                   <button id="infosec" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
                      <div class="team-player">
-                        <div class="card card-plain">
+                        <div class="card card-plain" style="border: 0">
                            <div class="col-md-8 ml-auto mr-auto">
                               <img src="img/startups/INFINITY INFOSEC.png" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
                            </div>
@@ -865,7 +868,7 @@
                <div class="col-md-3 slideanim">
                   <button id="MAVERICKS" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
                      <div class="team-player">
-                        <div class="card card-plain">
+                        <div class="card card-plain" style="border: 0">
                            <div class="col-md-8 ml-auto mr-auto">
                               <img src="img/startups/MAVERICKS.png" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
                            </div>
@@ -895,7 +898,7 @@
                <div class="col-md-3 slideanim">
                   <button id="AEM" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
                      <div class="team-player">
-                        <div class="card card-plain">
+                        <div class="card card-plain" style="border: 0">
                            <div class="col-md-8 ml-auto mr-auto">
                               <img src="img/startups/AEM.png" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
                            </div>
@@ -923,7 +926,7 @@
                <div class="col-md-3 slideanim">
                   <button id="INFINITY" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
                      <div class="team-player">
-                        <div class="card card-plain">
+                        <div class="card card-plain" style="border: 0">
                            <div class="col-md-8 ml-auto mr-auto">
                               <img src="img/startups/INFINITY.png" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
                            </div>
@@ -951,7 +954,7 @@
                <div class="col-md-3 slideanim">
                   <button id="crow" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
                      <div class="team-player">
-                        <div class="card card-plain">
+                        <div class="card card-plain" style="border: 0">
                            <div class="col-md-8 ml-auto mr-auto">
                               <img src="img/startups/PAPER CROW.png" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
                            </div>
@@ -979,7 +982,7 @@
                <div class="col-md-3 slideanim">
                   <button id="AVANTOURA" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
                      <div class="team-player">
-                        <div class="card card-plain">
+                        <div class="card card-plain" style="border: 0">
                            <div class="col-md-8 ml-auto mr-auto">
                               <img src="img/startups/AVANTOURA.png" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
                            </div>
@@ -1009,7 +1012,7 @@
                <div class="col-md-3 slideanim">
                   <button id="box" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
                      <div class="team-player">
-                        <div class="card card-plain">
+                        <div class="card card-plain" style="border: 0">
                            <div class="col-md-8 ml-auto mr-auto">
                               <img src="img/startups/MATCH BOX.jpg" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
                            </div>
@@ -1037,7 +1040,7 @@
                <div class="col-md-3 slideanim">
                   <button id="FRESBOTECH" class="btn btn-outline-white box foo"  onclick="modal_create(this.id)">
                      <div class="team-player">
-                        <div class="card card-plain">
+                        <div class="card card-plain" style="border: 0">
                            <div class="col-md-8 ml-auto mr-auto">
                               <img src="img/startups/FRESBOTECH.png" alt="Thumbnail Image" class="img-raised rounded-circle img-fluid">
                            </div>
