@@ -330,8 +330,8 @@
           height: 380; } }
       @media (min-width: 960px) and (orientation: landscape) {
         .slide-wrapper .illustr img {
-          width: 600px;
-          height: 420px;
+          width: 400px;
+          height: 400px;
            } }
   .slide-wrapper .legend_1 {
     padding: 16px;
@@ -347,7 +347,7 @@
     @media (min-width: 960px) and (orientation: landscape) {
       .slide-wrapper .legend_1 {
         position: absolute;
-        left: 45%;
+        left: 50%;
         top: 48px;
         height:500px;
         width: 370px;
